@@ -1,5 +1,5 @@
-find_package(Threads REQUIRED)
 include(ExternalProject)
+# https://google.github.io/googletest/quickstart-cmake.html
 
 include(FetchContent)
 FetchContent_Declare(
