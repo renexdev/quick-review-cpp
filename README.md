@@ -6,7 +6,7 @@
 
 - [Codewars cpp's code review](www.codewars.com)
 
-- Tested only on Debian 9
+- Tested only on Debian GNU/Linux 11 (bullseye)
 
 # Project Build & run
 
