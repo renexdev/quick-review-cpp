@@ -4,7 +4,7 @@
 
 - CMake + Google Test integrated
 
-- [Codewars cpp's code review](www.codewars.com)
+- [Codewars cpp's code review](https://www.codewars.com)
 
 - Tested only on Debian GNU/Linux 11 (bullseye)
 
