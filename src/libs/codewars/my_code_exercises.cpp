@@ -40,8 +40,8 @@ bool MyCodeWars::isValidWalk(std::vector<char> walk) {
   */
   bool is_valid = true;
 
-  // Descarto caso impar (no vuelve al lugar de origen)  && descarto mas de 10 pasos porque se le acaba el tiempo
-  if(walk.size() %2 != 0 || walk.size()> 10 ) is_valid = false;
+  // Descarto caso impar (no vuelve al lugar de origen)  && descarto mas o menos de 10 pasos porque se le acaba el tiempo o llega antes
+  if(walk.size() %2 != 0 || walk.size()!= 10 ) is_valid = false;
   
   //std::cout << "size: " <<walk.size() << std::endl;
   int n_count = count(walk.begin(), walk.end(), 'n');
