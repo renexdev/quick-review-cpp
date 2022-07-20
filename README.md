@@ -4,9 +4,9 @@
 
 - CMake + Google Test integrated
 
-- My Cpp's code quick review 
+- [Codewars cpp's code review](www.codewars.com)
 
-- Test only on Debian 9
+- Tested only on Debian 9
 
 # Project Build & run
 
@@ -18,6 +18,6 @@ make -j$(nproc)
 
 From the code above the `$CMAKE_BUILD` references the `./build` folder inside your project.
 
-To run samples `$CMAKE_BUILD/src/app/codewars/myCodeWars.app`
+To run the samples typing `$CMAKE_BUILD/src/app/codewars/myCodeWars.app`
 
-To run the tests `$CMAKE_BUILD/test/myapp_test`
+To run the tests typing  `$CMAKE_BUILD/test/myapp_test`
