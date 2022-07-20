@@ -1,7 +1,5 @@
-// A sample program demonstrating using Google C++ testing framework.
 #include <iostream>
 #include <vector>
-// Biblioteca Ejemplo Google Test
 #include "my_code_exercises.h"
 
 using namespace std; 

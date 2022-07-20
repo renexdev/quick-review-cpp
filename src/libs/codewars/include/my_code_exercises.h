@@ -1,14 +1,18 @@
-#ifndef codewars_H_
-#define codewars_H_
+#pragma once
 
-#include<vector>
+#include <iostream> 
+#include <vector>
+#include <string>
+#include <algorithm> // for_each
+
+using namespace std;
 
 class MyCodeWars {
 public:
 	// Take a Ten Minutes Walk problem
-	bool isValidWalk(std::vector<char> walk);
+	bool isValidWalk(vector<char> walk);
+	// String ends with?
+	bool solution(string const& str, string const& ending);
 
 };
 
-
-#endif 

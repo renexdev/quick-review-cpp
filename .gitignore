@@ -1,2 +1,5 @@
 .vscode/
 build/
+# Basics review
+src/app/basics/
+src/lib/basics
