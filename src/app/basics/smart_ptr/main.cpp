@@ -1,9 +1,4 @@
-#include <iostream>
-#include <memory>
-
-#include "basics.h"
-using namespace std; 
-
+#include "include/basics.h"
 
 void fn_with_unique_ptr_param_not_allowed (unique_ptr<Entity> param) 
 {
@@ -14,70 +9,10 @@ void fn_with_shared_ptr_param (shared_ptr<Entity> param)
 	//snipet
 }
 int main() {
-	Basics basicPattern;
-	int z = 0;
-	cout << "Valor inicial: " << z << endl;
-	basicPattern.funa(z);
-	/*
-	funb & fund can't change the param value
-	*/
-	cout << "Valor luego de funa: " << z << endl;
-	basicPattern.func(z);
-	cout << "Valor luego de func: " << z << endl;
+	// Punteros clasico
 	
-	basicPattern.test_enum();
-	basicPattern.test_string();
-
-	//Classes
-	// El new te da un puntero
-	Dog *dexter = new Dog("Dex");
-	dexter->animalSound();
-	Pig *elChanchitoValient = new Pig("Babe");
-	elChanchitoValient->animalSound();
-	delete dexter;
-	delete elChanchitoValient;
-
-	//Friendship
-	ClaseA* a = new ClaseA();
-	ClaseB* b = new ClaseB();
-    //ClaseA a;
-    //ClaseA* ptr_to_a = &a;
-
-	b->display(*a);
-	// Static vs Const member functions
-	ClaseMembFunBehav::static_fun();
-
-	ClaseMembFunBehav* c = new  ClaseMembFunBehav(3);
-	c->static_fun();	
-	cout << c->const_fun() << endl;
-	c->tryin_change_val(4);
-	cout << c->const_fun() << endl;
-	int i;
-	int j= 10;
-	//Se van ejecutando, el unico que afecta j es el primero, el ultimo se termina asignando a i
-	i = (j++,j+100,999+j);
-	cout<< i << endl;
-
-	// Exception handling
-	float num(1.),den(0.),result(0.);
-	try
-	{
-		if(den == 0.)
-		{
-			throw den;
-		}
-		else{
-			result	= num/den;
-		}
-	}
-	catch(float d){
-		cout << "El denominador no puede ser " << d<< endl;
-	}
-	cout << result << endl;
-
-	// Punteros
-	//clasico
 	cout << "Puntero clasico para asignar obj en heap" << endl; 
+
 	Entity* test_ptr = new Entity;
 	// sino llamamos el operador delete queda en memoria
 	delete test_ptr;
@@ -94,7 +29,7 @@ int main() {
 	Often this is what you want to do. For example, your GetMutexLock and ReleaseMutexLock would be much better C++ code written like this:
 	*/
 	//{
-		//se puede hacer asi pq el contructor es explicit
+		//se puede hacer asi pq el contructor de unique_ptr es explicit
 		unique_ptr<Entity> entity_unique_ptr(new Entity);
 		
 		//fn_with_unique_ptr_param_not_allowed(entity_unique_ptr);
