@@ -71,3 +71,13 @@ public:
 	int const_fun() const {return val;}
 	int tryin_change_val(int mod_val){this->val = mod_val;}
 };
+
+
+
+// Static vs Const member functions
+class Entity
+{
+public:
+	Entity(){cout << "> Entity::Entity()"<< endl;};
+	~Entity(){cout << "> Entity::~Entity()"<< endl;};
+};
