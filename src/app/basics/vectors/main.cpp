@@ -1,3 +1,21 @@
+#include "include/basics.h"
+
+int main() {
+
+	vector<Vect3d> vertices;
+  vertices.reserve(2);
+  vertices.push_back({1, 2, 3});
+  vertices.push_back({2, 4, 5});
+  // we construct the Vect3d in the main function then pushing it into de vector
+  vertices.push_back(Vect3d(1, 2, 3));
+  vertices.push_back(Vect3d(1, 2, 3));
+  
+  // Construct a Vect3d obj w/ following params in place in the actual vector
+  //vertices.emplace_back(1, 2, 3);
+  //vertices.emplace_back(1, 2, 3);
+
+	return EXIT_SUCCESS;
+}
 
 
 /*
