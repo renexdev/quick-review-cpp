@@ -8,6 +8,7 @@ add_subdirectory(basics/smart_ptr)
 add_subdirectory(basics/move_semantics)
 add_subdirectory(basics/vectors)
 add_subdirectory(basics/static_inside_class)
+add_subdirectory(basics/virtual)
 
 
 # Training with Code Wars

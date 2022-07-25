@@ -40,7 +40,7 @@ void Basics::test_enum()
 
 
 int main() {
-
+	
 	// Basics
 	int i;
 	int j= 10;
