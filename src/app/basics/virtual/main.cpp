@@ -15,6 +15,8 @@ int main() {
 	Entity* e2 = pl;
 	PrintName(e2);
 
+	PrintClassName(new A());
+
 	delete e,e2,pl;
 	
 	

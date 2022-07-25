@@ -23,6 +23,11 @@ public:
 	{ return "Entity";} 
 };
 
+// Me armo una funcion que imprime el tipo de clase sin portar
+//lo que consuma
+// Genero la interface i.e pure virtual
+// las clases derivadas tiene que implementar esse metodo
+
 void PrintName(Entity* e)
 {
 	cout << e->GetName() << endl;
@@ -44,4 +49,9 @@ public:
 	{ return "Player";} 
 private:
 	string m_Name;	
+};
+
+class A: public Printable
+{
+	string PrintClassName() override { return "A";}
 };
