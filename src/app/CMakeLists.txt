@@ -9,6 +9,7 @@ add_subdirectory(basics/move_semantics)
 add_subdirectory(basics/vectors)
 add_subdirectory(basics/static_inside_class)
 add_subdirectory(basics/virtual)
+add_subdirectory(basics/dynamic_cast)
 
 
 # Training with Code Wars
