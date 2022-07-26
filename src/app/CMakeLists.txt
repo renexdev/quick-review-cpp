@@ -10,6 +10,8 @@ add_subdirectory(basics/vectors)
 add_subdirectory(basics/static_inside_class)
 add_subdirectory(basics/virtual)
 add_subdirectory(basics/dynamic_cast)
+add_subdirectory(basics/templates)
+add_subdirectory(basics/union)
 
 
 # Training with Code Wars

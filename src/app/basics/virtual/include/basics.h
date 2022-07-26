@@ -27,7 +27,7 @@ public:
 //lo que consuma
 // Genero la interface i.e pure virtual
 // las clases derivadas tiene que implementar esse metodo
-
+// SIno se implementa esa funcion no se puede instanciar la clase
 void PrintName(Entity* e)
 {
 	cout << e->GetName() << endl;
