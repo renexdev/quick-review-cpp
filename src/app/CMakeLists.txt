@@ -12,6 +12,7 @@ add_subdirectory(basics/virtual)
 add_subdirectory(basics/dynamic_cast)
 add_subdirectory(basics/templates)
 add_subdirectory(basics/union)
+add_subdirectory(basics/diamond_problem)
 
 
 # Training with Code Wars
