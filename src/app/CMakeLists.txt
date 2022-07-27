@@ -13,6 +13,7 @@ add_subdirectory(basics/dynamic_cast)
 add_subdirectory(basics/templates)
 add_subdirectory(basics/union)
 add_subdirectory(basics/diamond_problem)
+add_subdirectory(basics/lambda_function)
 
 
 # Training with Code Wars
